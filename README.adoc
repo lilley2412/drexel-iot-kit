@@ -1,0 +1,38 @@
+## Drexel IOT Kit
+
+Description
+
+### Feather pin connections
+
+The main feather board is a standard feather footprint, but also has an on-board neopixel added on pin 8.
+
+The eink featherwing is on the standard feather I2C / SPI buses.  I've also wired A2, A3, and A5 to the 3 top buttons (see "buttons" section below).
+
+The dragon body neopixel strand is connected to pin 4.
+
+The WiFi wing uses the SPI bus (both the eink and wifi wings can use the same bus).
+
+### Stacking
+
+The m4 board must be on the **bottom**; this is due to some pins used by the eink display that are wired to the breadboard not being available on the wifi wing.  If you put down the wifi wing first, the eink display will not function.  You should be able to stack other wings on top of the wifi wing as long as no pin conflicts exist.
+
+### Neopixels
+
+The dragon body uses Adafruit Neopixels (https://github.com/adafruit/Adafruit_NeoPixel).  All Neopixels in the dragon body are connect as one "strand".  Each light in the strand is individually addressable.
+
+### WiFI
+
+Todo
+
+### Eink
+
+Todo
+
+### Power and Programming
+
+The lights and wings should operate off a standard usb 5v connection, so you can power and program the board from your computer.  You can also power from a 5v switching power supply connected directly to the micro usb.  The board also has lipo battery connectors and a built in charger.
+
+### Programming Errors!!!
+
+The m4 board tends to have flash upload errors frequently in both Arduino IDE and PIO.  YMMV based on specific driver versions.  If you can a freeze or error during the flash upload process, do a slow double-click of the reset button on top of the wifi wing; after the double click the red light should be illuminated on the m4 board.  This is considered a defect and should be fixed in a future version.
+
