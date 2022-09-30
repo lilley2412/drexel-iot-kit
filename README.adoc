@@ -1,6 +1,6 @@
 ## Drexel IOT Kit
 
-Description
+See link:https://github.com/lilley2412/drexel-iot-kit/blob/main/QUICKSTART.adoc[Quickstart] for environment setup and flashing instructions.
 
 ### Feather pin connections
 
