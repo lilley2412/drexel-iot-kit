@@ -4,6 +4,7 @@
 
 * Install Arduino IDE 2.x https://www.arduino.cc/en/software (this will install drivers required for the board)
 * Install the Platform IO extension in vscode https://platformio.org/install/ide?install=vscode
+  ** When Platform IO is first installed, it will show a downloading icon on top of the platform IO extension icon; this means it's downloading board data and first-time files - it will be unavailable for 3-4 minutes
 
 ### Build
 
