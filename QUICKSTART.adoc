@@ -1,0 +1,23 @@
+## Programming Quickstart
+
+### Pre-reqs
+
+* Install Arduino IDE 2.x https://www.arduino.cc/en/software (this will install drivers required for the board)
+* Install the Platform IO extension in vscode https://platformio.org/install/ide?install=vscode
+
+### Build
+
+* Clone this repo
+* Connect the m4 board to your laptop via the micro USB connector (make sure it's a port that has power and not a unpowered hub)
+* Use the platform IO extension (the alien icon on the left) to access the build menu.  The build *should* automatically get all dependencies; if not there may be some aspect of setup that I'm missing in these steps:
+
+image::docs/build.png[]
+
+* Upload and monitor - this will flash the device and open the serial port for monitoring serial print statements:
+
+image::docs/upload.png[]
+
+* you might need to select the port in the terminal window, but PIO should automatically find the port for you
+* if the port is found but the flash fails, it might be that the m4 board needs to be reset; do this by doing a "slow double click" of the reset button on top of the top board (the top board is the wifi board, but the reset button is connected to the reset of the m4 board underneath); if the reset works the red light should be on
+* if the flash starts but freezes part way through, repeat the reset process and flash again
+

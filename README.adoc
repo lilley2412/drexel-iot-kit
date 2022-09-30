@@ -26,7 +26,11 @@ Todo
 
 ### Eink
 
-Todo
+The display above the nameplate is a 2.9 inch 4-color greyscale eink display (https://www.adafruit.com/product/4777).  The display is like a kindle / ereader and will continue to display the programmed text after power is removed.  
+
+* **the display should NOT be updated more frequently than 3 minutes to preserve the life of the display; rapid cycling during development flashing is OK, but don't write code that frequently performs re-draw**
+* the eink display is a featherwing, which means it was desinged for the microcontroller board (a cortext m4 arm board in this case) to plug in to the wing via the female headers; for asthetic reasons the wing was placed away from the breadboard, so the pings for the board were brought to breadboard connections from the mcu board instead
+*   
 
 ### Power and Programming
 
